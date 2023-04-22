@@ -1,0 +1,12 @@
+.nav {
+  display: flex; /* Set display property to flex to align items horizontally */
+  justify-content: space-between; /* Add space between the items */
+  align-items: center; /* Center align items vertically */
+  background-color: #f0f0f0; /* Set background color for the nav element */
+  padding: 10px; /* Add padding around the nav element */
+}
+
+.nav img {
+  height: 50px; /* Set height of the image */
+  width: 50px; /* Set width of the image */
+}

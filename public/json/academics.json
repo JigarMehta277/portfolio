@@ -1,0 +1,24 @@
+[
+  {
+    "id": 5,
+    "clgname": "Humber College",
+    "degree": "Post Graduate Diploma",
+    "course": "Web Development",
+    "image": "./images/humber.png",
+    "description": "Web Development Course",
+    "project_id": 6,
+    "created_at": "2023-04-19T02:20:30.000000Z",
+    "updated_at": "2023-04-19T02:21:19.000000Z"
+  },
+  {
+    "id": 6,
+    "clgname": "U V Patel",
+    "degree": "Diploma",
+    "course": "Computer Science",
+    "image": "./images/uv.png",
+    "description": "Learned a lot",
+    "project_id": 6,
+    "created_at": "2023-04-19T02:19:20.000000Z",
+    "updated_at": "2023-04-19T02:20:30.000000Z"
+  }
+]

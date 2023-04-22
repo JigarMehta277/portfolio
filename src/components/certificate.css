@@ -1,0 +1,32 @@
+
+.container {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+
+.certi {
+  background-color: #f0f0f0; 
+  padding: 20px; 
+  max-width: 300px; 
+}
+
+
+.certititle {
+  font-size: 20px; 
+  margin-top: 0; 
+  margin-bottom: 10px; 
+}
+
+
+.certifiLevel {
+  font-size: 16px; 
+  margin: 0; 
+}
+
+
+.certifiLevel span {
+  font-weight: bold; 
+}
