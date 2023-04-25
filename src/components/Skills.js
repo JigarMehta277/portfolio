@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./skills.css"
+import "./Skills.css"
 
 export default function Skills() {
   const [data, setData] = useState([]);
