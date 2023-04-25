@@ -8,14 +8,14 @@ export default function Academics() {
   useEffect(() => {
     fetch('./json/academics.json')
       .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error(error));
+      .then(data => setData(data));
   }, []);
 
   return (
     <div>
       {data.map(item => (
         <div className='acContainer'>
+          <h2>Institutes</h2>
           <div className='acImage'>
             <img src={item.image} alt="Image" width="150px" height="150px"></img>
           </div>

@@ -7,8 +7,7 @@ export default function Certificates() {
   useEffect(() => {
     fetch('./json/certificates.json')
       .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error(error));
+      .then(data => setData(data));
   }, []);
 
   return (

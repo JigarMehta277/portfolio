@@ -1,0 +1,79 @@
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #1F51FF;
+  background-color: black;
+}
+
+.AboutPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.AboutPage img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.AboutPage h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.AboutPage p {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.AboutPage span {
+  font-weight: bold;
+}
+
+.AboutPage a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.AboutPage a:hover {
+  color: #0056b3;
+}
+
+.AboutPage .about {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact,
+.email,
+.linkedin,
+.github {
+  display: flex;
+  align-items: center;
+}
+.contact i,
+.email i,
+.linkedin i,
+.github i {
+  margin-right: 0.5rem;
+}
