@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className='portfolio-container'>
       <div className='AboutPage'>
-        <img src='./images/jigar.jpeg'/>
+        <img src='./images/jigar2.jpeg'/>
       </div>
       <div className='textname'>
         <h2>Jigar Mehta</h2>
