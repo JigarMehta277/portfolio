@@ -12,10 +12,10 @@ export default function Academics() {
   }, []);
 
   return (
-    <div>
+    <div id='Institutes'>
+      <h2>Institutes</h2>
       {data.map(item => (
         <div className='acContainer'>
-          <h2>Institutes</h2>
           <div className='acImage'>
             <img src={item.image} alt="Image" width="150px" height="150px"></img>
           </div>

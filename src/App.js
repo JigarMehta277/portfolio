@@ -1,7 +1,6 @@
 //import logo from './logo.svg';
 
 import './App.css';
-import Experience from './components/Experience';
 import About from './components/About';
 import Certificates from './components/Certificates';
 import Projects from './components/Projects';
@@ -18,11 +17,9 @@ function App() {
     <div className="App">
       <Header />
       <About/>
-      <Academics />
       <Projects />
-      <Experience />
       <Skills />
-      <Certificates />
+      <Academics />
       <Footer/>
     </div>
   );

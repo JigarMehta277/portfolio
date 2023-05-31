@@ -2,11 +2,48 @@
   display: flex; /* Set display property to flex to align items horizontally */
   justify-content: space-between; /* Add space between the items */
   align-items: center; /* Center align items vertically */
-  background-color: #f0f0f0; /* Set background color for the nav element */
+  background-color: #f9f9f9; /* Set background color for the nav element */
   padding: 10px; /* Add padding around the nav element */
 }
 
 .nav img {
   height: 50px; /* Set height of the image */
   width: 50px; /* Set width of the image */
+}
+.navigationBar {
+  background-color: #333333;
+  color: #ffffff;
+}
+.navigationBar a{
+  text-decoration: none;
+  color: #f9f9f9;
+}
+.navigationBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navigationBar li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigationBar li:hover {
+  background-color: #555555;
+}
+
+.navigationBar li:first-child {
+  border-right: 1px solid #ffffff;
+}
+
+.navigationBar li:last-child {
+  border-left: 1px solid #ffffff;
+}
+
+.navigationBar li.active {
+  background-color: #555555;
 }

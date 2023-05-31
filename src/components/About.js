@@ -6,17 +6,19 @@ import "./about.css";
 export default function About() {
 
   return (
-    <div className='portfolio-container'>
-      <div className='AboutPage'>
-        <img src='./images/jigar2.jpeg'/>
+    <div class="portfolioContainer">
+      <div className='aboutme'>
+        <h2>
+          Jigar
+        </h2>
+        <h3>
+          I am a web developer
+        </h3>
+        <p> I understand new things easily; I can fit in any environment</p>
+        <a href='#' className='button'>Hire me</a>
       </div>
-      <div className='textname'>
-        <h2>Jigar Mehta</h2>
-        <p className='contact'><span>Contact Number:</span>7827786087</p>
-        <p className='email'><span>Email Id</span>Jigarmehta277@gmail.com</p>
-        <p className='linkedin'><span>Linked link:</span><a href='https://www.linkedin.com/in/jigar-mehta-673228190/'>Jigar Mehta Linked in</a></p>
-        <p className='github'><span>Github link:</span><a href='https://github.com/JigarMehta277'>Jigar Mehta githubn</a></p>
-        <p className='about'><span>About:</span>Actively looking for Summer'23 Co-Op | Web Developer | JavaScript | Full Stack Developer | Post-graduate student at Humber college</p>
+      <div className='image'>
+        <img src='./images/jigar.png' alt="dp" id="dpImage"/>
       </div>
     </div>
   );

@@ -1,24 +1,41 @@
+.skills {
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-.container {
-  display: grid; 
-  gap: 20px; 
-}
 .SkillWri {
-  background-color: #d4af37; 
-  padding: 20px; 
-  text-align: center; 
+  max-width: 250px;
+  background-color: #ff9933;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .SkillWri h2 {
-  font-size: 20px; 
-  margin-top: 10px; 
-  margin-bottom: 5px; 
+  font-size: 20px;
+  margin-bottom: 10px;
 }
+
+.SkillWri h2:first-child {
+  color: #333333;
+  font-size: 24px;
+}
+
 .SkillWri p {
-  font-size: 16px; 
-  margin: 0; 
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666666;
 }
+
 .SkillWri img {
-  max-width: 155px; 
-  height: 155px; 
-  object-fit: cover; 
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
+

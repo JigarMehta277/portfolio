@@ -1,40 +1,76 @@
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.project {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .ProjectImage {
-  background-color: #d4af37;
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
   padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s;
 }
 
-
-.ProjectImage img {
-  max-width: 100%;
-  height: auto;
+.ProjectImage:hover {
+  transform: scale(1.05);
 }
-
 
 .ProjectImage h2 {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.ProjectImage img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ProjectImage:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ProjectImage a {
+  color: #000000;
+  text-decoration: none;
   margin-bottom: 5px;
 }
 
-
-.ProjectImage a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-
 .ProjectImage p {
   font-size: 16px;
-  margin: 0;
+  margin-bottom: 5px;
+  color: #666666;
 }
 
-#imagePLU {
-  height: 100px;
-  width: 100px;
+/* Animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ProjectImage {
+  animation: fade-in 0.5s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
 }

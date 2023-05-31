@@ -1,32 +1,66 @@
-
-.container {
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
+.exdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.exdiv{
-  text-align: center;
-  background-color: #d4af37;
-}
 .experience {
-  background-color: #d4af37; 
-  padding: 20px; 
-  max-width: 300px; 
+  max-width: 300px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s;
 }
-.Front {
-  font-size: 20px; 
-  margin-top: 0; 
-  margin-bottom: 10px; 
+
+.experience:hover {
+  transform: scale(1.05);
 }
-.Front span {
-  font-weight: bold; 
+
+.experience h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333333;
 }
-.title {
-  font-weight: bold; 
+
+.experience h2.Front {
+  font-size: 24px;
 }
+
+.experience h2 span {
+  font-weight: bold;
+}
+
 .experience p {
-  font-size: 16px; 
-  margin: 0; 
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.experience .title {
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience {
+  animation: fade-in 0.5s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
 }
